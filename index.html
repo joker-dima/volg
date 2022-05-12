@@ -14,9 +14,43 @@
     <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
+<body class="page-body">
+    <div class="page-container">
+        <!-- HEADER -->
+        <header class="main-header">
+            <nav class="main-navigation">
+                <ul class="main-navigation__list">
+                    <li class="main-navigation__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="main-navigation__item--logo">
+                        <a href="index.html">
+                            <picture>
+                                <source srcset="img/logotype-desktop.svg" media="(min-width:1200px)">
+                                <source srcset="img/logotype-tablet.svg" media="(min-width:100px)">
+                                <img src="img/logotype-tablet.svg" alt="Sedona logo">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Форма отзыва</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">html academy</a>
+                    </li>
+                </ul>
+            </nav>
 
-    <p>Hello world!</p>
+            <picture class="intro-wrapper">
+                <source srcset="img/back-desktop.jpg" media="(min-width:1200px)">
+            </picture>
+
+
+
+        </header>
 
 
 
@@ -38,7 +72,7 @@
 
 
 
-
+    </div>
 </body>
 
 </html>
