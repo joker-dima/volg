@@ -90,9 +90,24 @@
   }
 }
 
+@media (max-width: 320px) {
+  .intro {
+    background-image: url("../img/back-mobile.jpg");
+  }
+}
+
 .intro__slogan {
-  display: block;
-  text-align: center;
-  margin-top: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: 519px;
+  background-image: url("../img/intro-triangle.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.intro__slogan img {
+  margin-top: -14px;
 }
 /*# sourceMappingURL=style.css.map */
