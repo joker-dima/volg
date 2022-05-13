@@ -17,14 +17,15 @@
 }
 
 .page-body {
-    max-width: 1280px;
+
     background-color: #E7E5E5;
+
 }
 
 .page-container {
     background-color: white;
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
 
@@ -35,7 +36,6 @@
     }
 }
 
-
 // Header
 
 .main-header {
@@ -43,12 +43,12 @@
 }
 
 .main-navigation__list {
+    height: 102px;
     display: flex;
     justify-content: space-around;
     padding: 0;
     margin: 0;
 }
-
 
 .main-navigation__item {
 
@@ -75,8 +75,31 @@
 .intro-wrapper {
     position: absolute;
     top: 56px;
+}
 
-    img {
-        width: 100%;
+.intro-wrapper {
+    position: relative;
+}
+
+
+.intro {
+
+    position: absolute;
+    top: -102px;
+    width: 100%;
+    height: 518px;
+    background-image: url("../img/back-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width:768px) {
+        background-image: url("../img/back-tablet.jpg");
     }
+}
+
+.intro__slogan {
+    display: block;
+    text-align: center;
+    margin-top: 78px;
+
 }
