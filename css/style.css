@@ -49,12 +49,29 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .main-navigation {
+    height: 223px;
+    background-color: #81B3D2;
+  }
+}
+
 .main-navigation__list {
+  position: relative;
   height: 102px;
   display: flex;
   justify-content: space-around;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main-navigation__list {
+    z-index: 2;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
 }
 
 .main-navigation__item {
@@ -71,11 +88,34 @@
   line-height: 26px;
 }
 
+@media (max-width: 768px) {
+  .main-navigation__item a {
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-navigation-line {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 56px;
+    top: 223px;
+  }
+}
+
 .main-navigation__item--logo {
   list-style: none;
   margin-left: 29px;
   margin-right: 29px;
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .main-navigation__item--logo {
+    position: absolute;
+    top: 223px;
+  }
 }
 
 .intro-wrapper {
@@ -95,6 +135,7 @@
   background-image: url("../img/back-desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
