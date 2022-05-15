@@ -14,12 +14,12 @@ navToggleOpen.addEventListener('click', function () {
     }
 });
 
-navToggleClose.addEventListener('click', function () {
-    if (navMain.classList.contains('main-navigation--closed')) {
-        navMain.classList.remove('main-navigation--closed');
-        navMain.classList.add('main-navigation');
-    } else {
-        navMain.classList.add('main-navigation--closed');
-        navMain.classList.remove('main-navigation');
-    }
-});
+// navToggleClose.addEventListener('click', function () {
+//     if (navMain.classList.contains('main-navigation--closed')) {
+//         navMain.classList.remove('main-navigation--closed');
+//         navMain.classList.add('main-navigation');
+//     } else {
+//         navMain.classList.add('main-navigation--closed');
+//         navMain.classList.remove('main-navigation');
+//     }
+// });
