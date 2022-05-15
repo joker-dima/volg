@@ -49,11 +49,19 @@
   position: relative;
 }
 
+.main-navigation {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .main-navigation {
     height: 223px;
     background-color: #81B3D2;
   }
+}
+
+.main-navigation--closed {
+  display: none;
 }
 
 .main-navigation__list {
@@ -72,22 +80,47 @@
     height: auto;
     align-items: center;
   }
-  .main-navigation__list::before, .main-navigation__list::after {
-    content: "";
+}
+
+.main-navigation__togle--open {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .main-navigation__togle--open::after {
     position: absolute;
-    top: 26px;
-    left: 86%;
-    width: 28px;
+    bottom: 35px;
+    z-index: 3;
+    content: "";
+    left: 87%;
+    width: 23px;
     height: 4px;
-    background-color: white;
-    transition: all 0.3s ease 0s;
+    background-color: #81B3D2;
+    box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
   }
-  .main-navigation__list::before {
-    transform: rotate(45deg);
-  }
-  .main-navigation__list::after {
-    transform: rotate(-45deg);
-  }
+}
+
+.main-navigation__togle--close {
+  cursor: pointer;
+}
+
+.main-navigation__togle--close::before, .main-navigation__togle--close::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 86%;
+  width: 28px;
+  height: 4px;
+  background-color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.main-navigation__togle--close::before {
+  transform: rotate(45deg);
+}
+
+.main-navigation__togle--close::after {
+  transform: rotate(-45deg);
 }
 
 .main-navigation__item {
@@ -132,24 +165,22 @@
   }
 }
 
+.main-navigation-line picture {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .main-navigation-line picture {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .main-navigation-line {
-    position: absolute;
     background-color: #fff;
     width: 100%;
     height: 56px;
-    top: 223px;
-  }
-  .main-navigation-line::after {
-    z-index: 3;
-    content: "";
-    position: absolute;
-    top: 17px;
-    left: 87%;
-    width: 23px;
-    height: 4px;
-    background-color: #81B3D2;
-    box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
   }
 }
 
@@ -162,8 +193,7 @@
 
 @media (max-width: 767px) {
   .main-navigation__item--logo {
-    position: absolute;
-    top: 223px;
+    display: none;
   }
 }
 
@@ -190,14 +220,13 @@
 @media (max-width: 767px) {
   .intro {
     background-image: url("../img/back-tablet.jpg");
-    top: 0px;
   }
 }
 
 @media (max-width: 320px) {
   .intro {
     background-image: url("../img/back-mobile.jpg");
-    top: -65px;
+    top: -121px;
   }
 }
 
@@ -214,7 +243,7 @@
 
 @media (max-width: 320px) {
   .intro__slogan {
-    height: 454px;
+    height: 455px;
   }
 }
 

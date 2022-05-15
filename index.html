@@ -19,10 +19,10 @@
         <!-- HEADER -->
         <h1 class="visually-hidden">Welcome to Sedona site</h1>
         <header class="main-header">
-            <nav class="main-navigation">
+            <nav class="main-navigation main-navigation--closed">
                 <h2 class="visually-hidden">Site navigation</h2>
 
-                <ul class="main-navigation__list">
+                <ul class="main-navigation__list main-navigation__togle--close">
                     <li class="main-navigation__item">
                         <a href="index.html">Главная</a>
                     </li>
@@ -46,9 +46,15 @@
                         <a href="#">html academy</a>
                     </li>
                 </ul>
-                <div class="main-navigation-line"></div>
-            </nav>
 
+            </nav>
+            <div class="main-navigation-line main-navigation__togle--open">
+                <picture>
+                    <source srcset="img/logotype-mobile.svg" media="(max-width:767px)">
+                    <img src="img/logotype-mobile.svg" alt="Sedona logo">
+                </picture>
+
+            </div>
             <div class="intro-wrapper">
                 <div class="intro">
                     <picture class="intro__slogan">
