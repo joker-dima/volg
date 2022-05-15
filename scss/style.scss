@@ -155,7 +155,7 @@
 .main-navigation__item {
     width: 238px;
     list-style: none;
-    padding-top: 9px;
+    padding-top: 15px;
     text-align: center;
     padding-bottom: 7px;
 
@@ -202,7 +202,7 @@
         text-align: center;
     }
 
-    @media (min-width:767px) {
+    @media (min-width:768px) {
         picture {
             display: none;
         }
@@ -259,11 +259,12 @@
 }
 
 .intro__slogan {
+
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    height: 519px;
+    height: 518px;
     background-image: url("../img/intro-triangle.svg");
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -273,12 +274,15 @@
     }
 
     img {
+        padding-bottom: 13px;
+
         @media (max-width:767px) {
             margin-top: -56px;
         }
 
         @media (max-width:320px) {
             margin-top: 69px;
+            padding-bottom: 0;
         }
     }
 
