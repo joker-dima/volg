@@ -36,10 +36,29 @@
     }
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
 // Header
 
 .main-header {
     position: relative;
+}
+
+.main-navigation {
+    @media (max-width:320px) {}
 }
 
 .main-navigation__list {
@@ -99,7 +118,6 @@
     @media (max-width:320px) {
         background-image: url("../img/back-mobile.jpg");
     }
-
 }
 
 .intro__slogan {
