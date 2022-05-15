@@ -145,11 +145,13 @@
   list-style: none;
   padding-top: 15px;
   text-align: center;
-  padding-bottom: 7px;
 }
 
 @media (max-width: 767px) {
   .main-navigation__item {
+    line-height: 60px;
+    padding: 0;
+    height: 56px;
     box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.4), inset 0px 2px 0px rgba(255, 255, 255, 0.2);
     width: 100%;
   }
