@@ -7,7 +7,7 @@ let navToggleClose = document.querySelector(".main-navigation__togle--close")
 navToggleOpen.addEventListener('click', function () {
     if (navMain.classList.contains('main-navigation--closed')) {
         navMain.classList.remove('main-navigation--closed');
-        navMain.classList.add('main-navigation');
+        navMain.classList.add('main-navigation')
     } else {
         navMain.classList.add('main-navigation--closed');
         navMain.classList.remove('main-navigation');
@@ -23,3 +23,4 @@ navToggleClose.addEventListener('click', function () {
         navMain.classList.remove('main-navigation');
     }
 });
+

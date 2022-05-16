@@ -55,27 +55,37 @@
 
 .main-header {
     position: relative;
-
 }
 
 
 .main-navigation {
-    display: block;
 
     @media (max-width:767px) {
+        transition: all 0.2s ease-out;
         height: 223px;
         background-color: #81B3D2;
     }
 }
 
 @media (max-width:767px) {
+
     .main-navigation--closed {
-        display: none;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.2s ease-out;
+
     }
 }
 
 .main-navigation__list {
-
     position: relative;
     height: 56px;
     display: flex;
@@ -91,6 +101,7 @@
     }
 }
 
+
 .main-navigation__togle--open {
     width: 24px;
     height: 55px;
@@ -103,10 +114,7 @@
     padding-left: 10px;
 
     @media (max-width:767px) {
-
-
         &::after {
-
             position: absolute;
             bottom: 35px;
             content: "";
@@ -114,6 +122,14 @@
             height: 4px;
             background-color: #81B3D2;
             box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
+        }
+
+        &:hover::after {
+            opacity: 0.6;
+        }
+
+        &:active::after {
+            opacity: 0.3;
         }
     }
 }
@@ -149,6 +165,16 @@
         &::after {
             transform: rotate(-45deg);
         }
+
+        &:hover::after,
+        &:hover::before {
+            opacity: 0.6;
+        }
+
+        &:active::after,
+        &:active::before {
+            opacity: 0.3;
+        }
     }
 }
 
@@ -157,7 +183,6 @@
     list-style: none;
     padding-top: 15px;
     text-align: center;
-
 
     @media (max-width:767px) {
         line-height: 60px;
@@ -178,6 +203,14 @@
             background-size: 100% 7px;
             background-position: bottom;
         }
+
+        &:hover {
+            background-color: #669EC0;
+        }
+
+        &:active {
+            background-color: #5496BD;
+        }
     }
 
 
@@ -187,17 +220,42 @@
         font-size: 14px;
         line-height: 26px;
 
+        &:focus {
+            color: #604E43;
+        }
+
+        &:hover {
+            color: #81B3D2;
+        }
+
+        &:active {
+            color: black;
+            opacity: 0.3;
+        }
+
         @media (max-width:767px) {
             color: white;
             font-weight: 700;
             font-size: 18px;
             line-height: 40px;
+
+            &:focus {
+                color: white;
+            }
+
+            &:hover {
+                color: white;
+            }
+
+            &:active {
+                opacity: 0.3;
+            }
+
         }
     }
 }
 
 .main-navigation-line {
-    position: relative;
 
     picture {
         display: block;
@@ -214,7 +272,6 @@
         background-color: #fff;
         width: 100%;
         height: 56px;
-
     }
 }
 
@@ -225,7 +282,6 @@
     z-index: 2;
 
     @media (max-width:767px) {
-
         display: none;
     }
 }
@@ -246,17 +302,35 @@
     width: 100%;
     height: 518px;
     background-image: url("../img/back-desktop.jpg");
+
+
+    @media (min-resolution: 2dppx) {
+        background-size: 1200px auto;
+        background-image: url("../img/back-desktop-retina.jpg");
+    }
+
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
 
     @media (max-width:767px) {
         background-image: url("../img/back-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-size: 768px auto;
+            background-image: url("../img/back-tablet-retina.jpg");
+        }
+
     }
 
     @media (max-width:320px) {
         background-image: url("../img/back-mobile.jpg");
         top: -121px;
+
+        @media (min-resolution: 2dppx) {
+            background-size: 320px auto;
+            background-image: url("../img/back-mobile-retina.jpg");
+        }
     }
 }
 
@@ -266,7 +340,7 @@
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    height: 518px;
+    height: 519px;
     background-image: url("../img/intro-triangle.svg");
     background-position: center bottom;
     background-repeat: no-repeat;
