@@ -484,6 +484,25 @@
   flex: 66.6%;
 }
 
+@media (max-width: 320px) {
+  .featurse__image {
+    background-image: url("../img/photo-city-mobile.jpg");
+  }
+}
+
+@media (max-width: 320px) and (min-resolution: 2dppx) {
+  .featurse__image {
+    background-image: url("../img/photo-city-mobile-retina.jpg");
+  }
+}
+
+@media (min-width: 321px) and (min-resolution: 2dppx) {
+  .featurse__image {
+    background-size: auto 256px;
+    background-image: url("../img/photo-city-desctop-retina.jpg");
+  }
+}
+
 @media (max-width: 1200px) {
   .title__content__features--separator {
     display: none;
