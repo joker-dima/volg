@@ -80,7 +80,7 @@
         clip: rect(0 0 0 0);
         overflow: hidden;
         visibility: hidden;
-        transition: all 0.2s ease-out;
+        transition: all 0.15s ease-out;
 
     }
 }
@@ -234,6 +234,7 @@
         }
 
         @media (max-width:767px) {
+            padding: 13px 60px;
             color: white;
             font-weight: 700;
             font-size: 18px;
@@ -250,8 +251,12 @@
             &:active {
                 opacity: 0.3;
             }
-
         }
+
+        @media (max-width:320px) {
+            padding: 0;
+        }
+
     }
 }
 
