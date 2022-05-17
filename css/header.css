@@ -302,4 +302,10 @@
     margin-top: -56px;
   }
 }
+
+@media (max-width: 320px) {
+  .intro__slogan img {
+    margin-top: 19px;
+  }
+}
 /*# sourceMappingURL=header.css.map */
