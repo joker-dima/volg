@@ -374,12 +374,25 @@
   }
 }
 
+@media (max-width: 767px) {
+  .title__position {
+    margin-top: 33.5px;
+    margin-bottom: 11.5px;
+  }
+}
+
 .title__heading {
   margin: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 31px;
+}
+
+@media (max-width: 767px) {
+  .title__heading {
+    font-size: 18px;
+  }
 }
 
 .title__content {
@@ -395,6 +408,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 767px) {
+  .featurse {
+    display: block;
+  }
+}
+
 .featurse__title {
   background-color: #81B3D2;
   flex-direction: column;
@@ -402,6 +421,16 @@
   text-align: center;
   flex: calc(33.33% - 40px);
   padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .featurse__title {
+    background-image: url("../img/main-content-triangle.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 5;
+    padding: 0 17px 40px 17px;
+  }
 }
 
 .title__heading__features {
@@ -419,6 +448,13 @@
   }
 }
 
+@media (max-width: 767px) {
+  .title__heading__features {
+    padding-top: 70px;
+    font-size: 18px;
+  }
+}
+
 .title__content__features {
   margin: 0;
   color: white;
@@ -426,6 +462,12 @@
   font-size: 14px;
   line-height: 21px;
   padding-top: 22px;
+}
+
+@media (max-width: 767px) {
+  .title__content__features {
+    padding-top: 14px;
+  }
 }
 
 .title__content__features--number {
@@ -439,12 +481,17 @@
   background-repeat: no-repeat;
   height: 256px;
   flex: 66.6%;
-  background-position: right;
+}
+
+@media (max-width: 1200px) {
+  .title__content__features--separator {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-  .featurse__image {
-    background-image: url("../img/photo-city-tablet.jpg");
+  .title__heading__features--separator {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
