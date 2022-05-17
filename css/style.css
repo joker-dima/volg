@@ -355,4 +355,96 @@
     margin-top: 19px;
   }
 }
+
+.title {
+  margin: 0 auto;
+  max-width: 490px;
+}
+
+.title__position {
+  margin-top: 55px;
+  margin-bottom: 41px;
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .title__position {
+    margin-top: 43.5px;
+    margin-bottom: 52.5px;
+  }
+}
+
+.title__heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 31px;
+}
+
+.title__content {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.featurse {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.featurse__title {
+  background-color: #81B3D2;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  flex: calc(33.33% - 40px);
+  padding: 0 20px;
+}
+
+.title__heading__features {
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 48px;
+}
+
+@media (max-width: 1199px) {
+  .title__heading__features {
+    padding-top: 42px;
+  }
+}
+
+.title__content__features {
+  margin: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 22px;
+}
+
+.title__content__features--number {
+  margin: 0;
+  padding-top: 14px;
+}
+
+.featurse__image {
+  background-image: url("../img/photo-city-desctop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 256px;
+  flex: 66.6%;
+  background-position: right;
+}
+
+@media (max-width: 768px) {
+  .featurse__image {
+    background-image: url("../img/photo-city-tablet.jpg");
+  }
+}
 /*# sourceMappingURL=style.css.map */
