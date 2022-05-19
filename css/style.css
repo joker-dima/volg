@@ -377,7 +377,7 @@
 @media (max-width: 767px) {
   .title__position {
     margin-top: 33.5px;
-    margin-bottom: 11.5px;
+    margin-bottom: 17.5px;
     padding: 0 17px;
   }
 }
@@ -484,6 +484,12 @@
   flex: 66.6%;
 }
 
+@media (max-width: 767px) {
+  .featurse__image {
+    height: 260px;
+  }
+}
+
 @media (max-width: 320px) {
   .featurse__image {
     background-image: url("../img/photo-city-mobile.jpg");
@@ -493,6 +499,7 @@
 @media (max-width: 320px) and (min-resolution: 2dppx) {
   .featurse__image {
     background-image: url("../img/photo-city-mobile-retina.jpg");
+    background-size: 100%;
   }
 }
 
@@ -518,30 +525,73 @@
 .our-features--wrapper {
   display: flex;
   justify-content: space-around;
-  text-align: center;
   padding: 60px 0 80px 0;
 }
 
-.our-features {
-  width: 282px;
-  height: 190px;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 1199px) {
-  .our-features {
-    width: 195px;
-    height: 210px;
+@media (max-width: 767px) {
+  .our-features--wrapper {
+    flex-direction: column;
+    padding: 26px 18px 35px 18px;
   }
 }
 
-.our-features__item img {
-  height: 75px;
+.our-features {
+  width: 300px;
+  display: grid;
+  grid-template: 75px 55px 1fr / 1fr;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .our-features {
+    width: 100%;
+    height: auto;
+    grid-template: 1fr 1fr / 1fr 85%;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-features--position {
+    order: 3;
+  }
+}
+
+.our-features__item {
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .our-features__item img {
+    width: 100%;
+  }
 }
 
 .title__heading--position {
-  padding: 20px;
   margin: 0;
+  padding-top: 22px;
+}
+
+@media (max-width: 767px) {
+  .title__heading--position {
+    text-align: left;
+    margin: auto 0;
+    padding-left: 15px;
+    padding-top: 0;
+  }
+}
+
+.title__content--position {
+  padding: 15px 15px 0 15px;
+}
+
+@media (max-width: 767px) {
+  .title__content--position {
+    padding-left: 15px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
