@@ -66,8 +66,8 @@
     flex-direction: column;
     display: flex;
     text-align: center;
-    flex: calc(33.33% - 40px);
-    padding: 0 20px;
+    flex: calc(33.33% - 80px);
+    padding: 0 40px;
 
     @media (max-width:767px) {
         background-image: url("../img/main-content-triangle.svg");
@@ -144,6 +144,27 @@
     }
 }
 
+.featurse__image--second {
+    order: -1;
+    background-image: url("../img/photo-bridge-desctop.jpg");
+
+    @media (max-width:320px) {
+        background-image: url("../img/photo-bridge-mobile.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/photo-bridge-mobile-retina.jpg");
+            background-size: 100%;
+        }
+    }
+
+    @media (min-width:321px) {
+        @media (min-resolution: 2dppx) {
+            background-size: auto 256px;
+            background-image: url("../img/photo-bridge-desctop-retina.jpg");
+        }
+    }
+}
+
 .title__content__features--separator {
     @media (max-width:1200px) {
         display: none;
@@ -161,11 +182,13 @@
     justify-content: space-around;
     padding: 60px 0 80px 0;
 
-    @media (max-width:1199px) {}
+    @media (max-width:1199px) {
+        padding: 60px 0 58px 0;
+    }
 
     @media (max-width:767px) {
         flex-direction: column;
-        padding: 26px 18px 35px 18px;
+        padding: 14px 15px 35px 15px;
     }
 }
 
@@ -180,10 +203,11 @@
     @media (max-width:767px) {
         width: 100%;
         height: auto;
-        grid-template: 1fr 1fr / 1fr 85%;
+        grid-template: 1fr 0.5fr / 1fr 85%;
         align-items: center;
         text-align: left;
-        // margin-bottom: 21px;
+        padding-bottom: 10px;
+
     }
 }
 
@@ -198,7 +222,7 @@
 
     img {
         @media (max-width:767px) {
-            width: 100%
+            width: 90%
         }
     }
 }
@@ -210,16 +234,16 @@
     @media (max-width:767px) {
         text-align: left;
         margin: auto 0;
-        padding-left: 15px;
+        padding-left: 8px;
         padding-top: 0;
     }
 }
 
 .title__content--position {
-    padding: 15px 15px 0 15px;
+    padding: 15px 0 0 15px;
 
     @media (max-width:767px) {
-        padding-left: 15px;
+        padding-left: 8px;
         grid-column-start: 2;
         grid-column-end: 3;
         padding-top: 0;

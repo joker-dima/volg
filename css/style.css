@@ -420,8 +420,8 @@
   flex-direction: column;
   display: flex;
   text-align: center;
-  flex: calc(33.33% - 40px);
-  padding: 0 20px;
+  flex: calc(33.33% - 80px);
+  padding: 0 40px;
 }
 
 @media (max-width: 767px) {
@@ -510,6 +510,31 @@
   }
 }
 
+.featurse__image--second {
+  order: -1;
+  background-image: url("../img/photo-bridge-desctop.jpg");
+}
+
+@media (max-width: 320px) {
+  .featurse__image--second {
+    background-image: url("../img/photo-bridge-mobile.jpg");
+  }
+}
+
+@media (max-width: 320px) and (min-resolution: 2dppx) {
+  .featurse__image--second {
+    background-image: url("../img/photo-bridge-mobile-retina.jpg");
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 321px) and (min-resolution: 2dppx) {
+  .featurse__image--second {
+    background-size: auto 256px;
+    background-image: url("../img/photo-bridge-desctop-retina.jpg");
+  }
+}
+
 @media (max-width: 1200px) {
   .title__content__features--separator {
     display: none;
@@ -528,10 +553,16 @@
   padding: 60px 0 80px 0;
 }
 
+@media (max-width: 1199px) {
+  .our-features--wrapper {
+    padding: 60px 0 58px 0;
+  }
+}
+
 @media (max-width: 767px) {
   .our-features--wrapper {
     flex-direction: column;
-    padding: 26px 18px 35px 18px;
+    padding: 14px 15px 35px 15px;
   }
 }
 
@@ -546,9 +577,10 @@
   .our-features {
     width: 100%;
     height: auto;
-    grid-template: 1fr 1fr / 1fr 85%;
+    grid-template: 1fr 0.5fr / 1fr 85%;
     align-items: center;
     text-align: left;
+    padding-bottom: 10px;
   }
 }
 
@@ -564,7 +596,7 @@
 
 @media (max-width: 767px) {
   .our-features__item img {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -577,18 +609,18 @@
   .title__heading--position {
     text-align: left;
     margin: auto 0;
-    padding-left: 15px;
+    padding-left: 8px;
     padding-top: 0;
   }
 }
 
 .title__content--position {
-  padding: 15px 15px 0 15px;
+  padding: 15px 0 0 15px;
 }
 
 @media (max-width: 767px) {
   .title__content--position {
-    padding-left: 15px;
+    padding-left: 8px;
     grid-column-start: 2;
     grid-column-end: 3;
     padding-top: 0;
