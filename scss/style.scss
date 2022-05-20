@@ -75,7 +75,13 @@
         background-repeat: no-repeat;
         z-index: 5;
         padding: 0 17px 40px 17px;
+    }
+}
 
+.featurse__title--position {
+    @media (max-width:767px) {
+        background-image: none;
+        padding: 0 17px 37px 17px;
     }
 }
 
@@ -85,7 +91,7 @@
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
-    padding-top: 46px;
+    padding-top: 52px;
 
     @media (max-width:1199px) {
         padding-top: 42px;
@@ -96,6 +102,15 @@
         font-size: 18px;
     }
 }
+
+.title__heading__features--position {
+    @media (max-width:767px) {
+        padding-top: 36px;
+
+    }
+}
+
+
 
 .title__content__features {
     margin: 0;
@@ -123,12 +138,13 @@
     flex: 66.6%;
 
     @media (max-width:767px) {
-        height: 260px;
+        height: 256px;
     }
 
 
     @media (max-width:320px) {
         background-image: url("../img/photo-city-mobile.jpg");
+        height: 260px;
 
         @media (min-resolution: 2dppx) {
             background-image: url("../img/photo-city-mobile-retina.jpg");
@@ -172,7 +188,7 @@
 }
 
 .title__heading__features--separator {
-    @media (max-width:768px) {
+    @media (max-width:767px) {
         display: none;
     }
 }
@@ -182,13 +198,14 @@
     justify-content: space-around;
     padding: 60px 0 80px 0;
 
+
     @media (max-width:1199px) {
         padding: 60px 0 58px 0;
     }
 
     @media (max-width:767px) {
         flex-direction: column;
-        padding: 14px 15px 35px 15px;
+        padding: 14px 31px 19px 19px;
     }
 }
 
@@ -240,15 +257,35 @@
 }
 
 .title__content--position {
-    padding: 15px 0 0 15px;
+    padding: 15px 15px 0 15px;
 
     @media (max-width:767px) {
         padding-left: 8px;
         grid-column-start: 2;
         grid-column-end: 3;
         padding-top: 0;
-
-
-
     }
+}
+
+.featurse-block {
+    display: flex;
+}
+
+.featurse-block__title {
+    background-color: #EEEEEE;
+    padding-bottom: 62px;
+}
+
+.featurse-block__heading {
+    color: black;
+    margin-top: -8px;
+}
+
+.featurse-block__content {
+    color: black;
+    margin-top: -9px;
+}
+
+.featurse-block__content--position {
+    margin-top: 0;
 }

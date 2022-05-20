@@ -434,13 +434,20 @@
   }
 }
 
+@media (max-width: 767px) {
+  .featurse__title--position {
+    background-image: none;
+    padding: 0 17px 37px 17px;
+  }
+}
+
 .title__heading__features {
   margin: 0;
   color: white;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  padding-top: 46px;
+  padding-top: 52px;
 }
 
 @media (max-width: 1199px) {
@@ -453,6 +460,12 @@
   .title__heading__features {
     padding-top: 70px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title__heading__features--position {
+    padding-top: 36px;
   }
 }
 
@@ -486,13 +499,14 @@
 
 @media (max-width: 767px) {
   .featurse__image {
-    height: 260px;
+    height: 256px;
   }
 }
 
 @media (max-width: 320px) {
   .featurse__image {
     background-image: url("../img/photo-city-mobile.jpg");
+    height: 260px;
   }
 }
 
@@ -541,7 +555,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .title__heading__features--separator {
     display: none;
   }
@@ -562,7 +576,7 @@
 @media (max-width: 767px) {
   .our-features--wrapper {
     flex-direction: column;
-    padding: 14px 15px 35px 15px;
+    padding: 14px 31px 19px 19px;
   }
 }
 
@@ -615,7 +629,7 @@
 }
 
 .title__content--position {
-  padding: 15px 0 0 15px;
+  padding: 15px 15px 0 15px;
 }
 
 @media (max-width: 767px) {
@@ -625,5 +639,28 @@
     grid-column-end: 3;
     padding-top: 0;
   }
+}
+
+.featurse-block {
+  display: flex;
+}
+
+.featurse-block__title {
+  background-color: #EEEEEE;
+  padding-bottom: 62px;
+}
+
+.featurse-block__heading {
+  color: black;
+  margin-top: -8px;
+}
+
+.featurse-block__content {
+  color: black;
+  margin-top: -9px;
+}
+
+.featurse-block__content--position {
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
